@@ -29,6 +29,8 @@
 @property (nonatomic, retain) NSNumber *gameInning;
 @property (nonatomic, assign) BOOL gameTopOfInning;
 
+@property (nonatomic, retain) NSArray *lineScoreInnings;
+
 @property (nonatomic, retain) NSNumber *awayTeamRuns;
 @property (nonatomic, retain) NSNumber *homeTeamRuns;
 
