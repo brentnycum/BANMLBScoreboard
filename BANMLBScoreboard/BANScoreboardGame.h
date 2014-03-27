@@ -55,4 +55,6 @@
 @property (nonatomic, retain) BANScoreboardPlayer *homeProbablePitcher;
 @property (nonatomic, retain) BANScoreboardPlayer *awayProbablePitcher;
 
+@property (nonatomic, retain) NSArray *homeRuns;
+
 @end
