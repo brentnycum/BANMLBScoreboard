@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		989CB50018E3BCE200E73810 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989CB4FF18E3BCE200E73810 /* Cocoa.framework */; };
+		989CB54018E3BD6700E73810 /* BANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 989CB53518E3BD6700E73810 /* BANAppDelegate.m */; };
+		989CB54118E3BD6700E73810 /* BANMLBScoreboard-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 989CB53618E3BD6700E73810 /* BANMLBScoreboard-Info.plist */; };
+		989CB54218E3BD6700E73810 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989CB53818E3BD6700E73810 /* MainMenu.xib */; };
+		989CB54318E3BD6700E73810 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 989CB53A18E3BD6700E73810 /* Credits.rtf */; };
+		989CB54418E3BD6700E73810 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 989CB53C18E3BD6700E73810 /* InfoPlist.strings */; };
+		989CB54518E3BD6700E73810 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989CB53E18E3BD6700E73810 /* Images.xcassets */; };
+		989CB54618E3BD6700E73810 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 989CB53F18E3BD6700E73810 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		989CB4FC18E3BCE200E73810 /* BANMLBScoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BANMLBScoreboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		989CB4FF18E3BCE200E73810 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		989CB50218E3BCE200E73810 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		989CB50318E3BCE200E73810 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		989CB50418E3BCE200E73810 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		989CB51E18E3BCE200E73810 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		989CB53418E3BD6700E73810 /* BANAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANAppDelegate.h; sourceTree = "<group>"; };
+		989CB53518E3BD6700E73810 /* BANAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANAppDelegate.m; sourceTree = "<group>"; };
+		989CB53618E3BD6700E73810 /* BANMLBScoreboard-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BANMLBScoreboard-Info.plist"; sourceTree = "<group>"; };
+		989CB53718E3BD6700E73810 /* BANMLBScoreboard-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BANMLBScoreboard-Prefix.pch"; sourceTree = "<group>"; };
+		989CB53918E3BD6700E73810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		989CB53B18E3BD6700E73810 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		989CB53D18E3BD6700E73810 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		989CB53E18E3BD6700E73810 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		989CB53F18E3BD6700E73810 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		989CB4F918E3BCE200E73810 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989CB50018E3BCE200E73810 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		989CB4F318E3BCE200E73810 = {
+			isa = PBXGroup;
+			children = (
+				989CB53318E3BD6700E73810 /* Example */,
+				989CB4FE18E3BCE200E73810 /* Frameworks */,
+				989CB4FD18E3BCE200E73810 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		989CB4FD18E3BCE200E73810 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				989CB4FC18E3BCE200E73810 /* BANMLBScoreboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		989CB4FE18E3BCE200E73810 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				989CB4FF18E3BCE200E73810 /* Cocoa.framework */,
+				989CB51E18E3BCE200E73810 /* XCTest.framework */,
+				989CB50118E3BCE200E73810 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		989CB50118E3BCE200E73810 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				989CB50218E3BCE200E73810 /* AppKit.framework */,
+				989CB50318E3BCE200E73810 /* CoreData.framework */,
+				989CB50418E3BCE200E73810 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		989CB53318E3BD6700E73810 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				989CB53418E3BD6700E73810 /* BANAppDelegate.h */,
+				989CB53518E3BD6700E73810 /* BANAppDelegate.m */,
+				989CB53618E3BD6700E73810 /* BANMLBScoreboard-Info.plist */,
+				989CB53718E3BD6700E73810 /* BANMLBScoreboard-Prefix.pch */,
+				989CB53818E3BD6700E73810 /* MainMenu.xib */,
+				989CB53A18E3BD6700E73810 /* Credits.rtf */,
+				989CB53C18E3BD6700E73810 /* InfoPlist.strings */,
+				989CB53E18E3BD6700E73810 /* Images.xcassets */,
+				989CB53F18E3BD6700E73810 /* main.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		989CB4FB18E3BCE200E73810 /* BANMLBScoreboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989CB52D18E3BCE200E73810 /* Build configuration list for PBXNativeTarget "BANMLBScoreboard" */;
+			buildPhases = (
+				989CB4F818E3BCE200E73810 /* Sources */,
+				989CB4F918E3BCE200E73810 /* Frameworks */,
+				989CB4FA18E3BCE200E73810 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BANMLBScoreboard;
+			productName = BANMLBScoreboard;
+			productReference = 989CB4FC18E3BCE200E73810 /* BANMLBScoreboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		989CB4F418E3BCE200E73810 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BAN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "It's Brent";
+			};
+			buildConfigurationList = 989CB4F718E3BCE200E73810 /* Build configuration list for PBXProject "BANMLBScoreboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 989CB4F318E3BCE200E73810;
+			productRefGroup = 989CB4FD18E3BCE200E73810 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				989CB4FB18E3BCE200E73810 /* BANMLBScoreboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		989CB4FA18E3BCE200E73810 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989CB54118E3BD6700E73810 /* BANMLBScoreboard-Info.plist in Resources */,
+				989CB54518E3BD6700E73810 /* Images.xcassets in Resources */,
+				989CB54418E3BD6700E73810 /* InfoPlist.strings in Resources */,
+				989CB54318E3BD6700E73810 /* Credits.rtf in Resources */,
+				989CB54218E3BD6700E73810 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		989CB4F818E3BCE200E73810 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989CB54618E3BD6700E73810 /* main.m in Sources */,
+				989CB54018E3BD6700E73810 /* BANAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		989CB53818E3BD6700E73810 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				989CB53918E3BD6700E73810 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		989CB53A18E3BD6700E73810 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				989CB53B18E3BD6700E73810 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		989CB53C18E3BD6700E73810 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				989CB53D18E3BD6700E73810 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		989CB52B18E3BCE200E73810 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		989CB52C18E3BCE200E73810 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		989CB52E18E3BCE200E73810 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/BANMLBScoreboard-Prefix.pch";
+				INFOPLIST_FILE = "Example/BANMLBScoreboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		989CB52F18E3BCE200E73810 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/BANMLBScoreboard-Prefix.pch";
+				INFOPLIST_FILE = "Example/BANMLBScoreboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		989CB4F718E3BCE200E73810 /* Build configuration list for PBXProject "BANMLBScoreboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989CB52B18E3BCE200E73810 /* Debug */,
+				989CB52C18E3BCE200E73810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989CB52D18E3BCE200E73810 /* Build configuration list for PBXNativeTarget "BANMLBScoreboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989CB52E18E3BCE200E73810 /* Debug */,
+				989CB52F18E3BCE200E73810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 989CB4F418E3BCE200E73810 /* Project object */;
+}
