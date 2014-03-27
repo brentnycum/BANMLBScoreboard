@@ -16,6 +16,7 @@
 		989CB54518E3BD6700E73810 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989CB53E18E3BD6700E73810 /* Images.xcassets */; };
 		989CB54618E3BD6700E73810 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 989CB53F18E3BD6700E73810 /* main.m */; };
 		989CB54A18E3BF9A00E73810 /* BANScoreboardGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 989CB54918E3BF9A00E73810 /* BANScoreboardGame.m */; };
+		989CB54D18E3C38600E73810 /* BANScoreboardInning.m in Sources */ = {isa = PBXBuildFile; fileRef = 989CB54C18E3C38600E73810 /* BANScoreboardInning.m */; };
 		DB98B793AE814C2AB1F3D29E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C769884240AA4524AC10B4ED /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,8 @@
 		989CB53F18E3BD6700E73810 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		989CB54818E3BF9A00E73810 /* BANScoreboardGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BANScoreboardGame.h; path = BANMLBScoreboard/BANScoreboardGame.h; sourceTree = "<group>"; };
 		989CB54918E3BF9A00E73810 /* BANScoreboardGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BANScoreboardGame.m; path = BANMLBScoreboard/BANScoreboardGame.m; sourceTree = "<group>"; };
+		989CB54B18E3C38600E73810 /* BANScoreboardInning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BANScoreboardInning.h; path = BANMLBScoreboard/BANScoreboardInning.h; sourceTree = "<group>"; };
+		989CB54C18E3C38600E73810 /* BANScoreboardInning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BANScoreboardInning.m; path = BANMLBScoreboard/BANScoreboardInning.m; sourceTree = "<group>"; };
 		A393BFBAF16E4711A75761BF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C769884240AA4524AC10B4ED /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,6 +118,8 @@
 			children = (
 				989CB54818E3BF9A00E73810 /* BANScoreboardGame.h */,
 				989CB54918E3BF9A00E73810 /* BANScoreboardGame.m */,
+				989CB54B18E3C38600E73810 /* BANScoreboardInning.h */,
+				989CB54C18E3C38600E73810 /* BANScoreboardInning.m */,
 			);
 			name = BANMLBScoreboard;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				989CB54D18E3C38600E73810 /* BANScoreboardInning.m in Sources */,
 				989CB54A18E3BF9A00E73810 /* BANScoreboardGame.m in Sources */,
 				989CB54618E3BD6700E73810 /* main.m in Sources */,
 				989CB54018E3BD6700E73810 /* BANAppDelegate.m in Sources */,
