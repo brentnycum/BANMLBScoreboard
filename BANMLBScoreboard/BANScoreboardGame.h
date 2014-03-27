@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class BANScoreboardPlayer;
+
 @interface BANScoreboardGame : NSObject
 
 @property (nonatomic, retain) NSString *scoreboardId;
@@ -45,5 +47,12 @@
 
 @property (nonatomic, retain) NSString *awayTeamTV;
 @property (nonatomic, retain) NSString *awayTeamRadio;
+
+@property (nonatomic, retain) BANScoreboardPlayer *winningPitcher;
+@property (nonatomic, retain) BANScoreboardPlayer *losingPitcher;
+@property (nonatomic, retain) BANScoreboardPlayer *savePitcher;
+
+@property (nonatomic, retain) BANScoreboardPlayer *homeProbablePitcher;
+@property (nonatomic, retain) BANScoreboardPlayer *awayProbablePitcher;
 
 @end
