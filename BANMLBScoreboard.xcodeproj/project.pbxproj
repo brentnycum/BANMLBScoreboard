@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980E341D18E5188900E2B1AC /* BANMLBScoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 980E341C18E5188900E2B1AC /* BANMLBScoreboard.m */; };
 		989CB50018E3BCE200E73810 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989CB4FF18E3BCE200E73810 /* Cocoa.framework */; };
 		989CB54018E3BD6700E73810 /* BANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 989CB53518E3BD6700E73810 /* BANAppDelegate.m */; };
 		989CB54118E3BD6700E73810 /* BANMLBScoreboard-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 989CB53618E3BD6700E73810 /* BANMLBScoreboard-Info.plist */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		980E341B18E5188900E2B1AC /* BANMLBScoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BANMLBScoreboard.h; path = BANMLBScoreboard/BANMLBScoreboard.h; sourceTree = "<group>"; };
+		980E341C18E5188900E2B1AC /* BANMLBScoreboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BANMLBScoreboard.m; path = BANMLBScoreboard/BANMLBScoreboard.m; sourceTree = "<group>"; };
 		989CB4FC18E3BCE200E73810 /* BANMLBScoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BANMLBScoreboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989CB4FF18E3BCE200E73810 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		989CB50218E3BCE200E73810 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 		989CB54718E3BF6D00E73810 /* BANMLBScoreboard */ = {
 			isa = PBXGroup;
 			children = (
+				980E341B18E5188900E2B1AC /* BANMLBScoreboard.h */,
+				980E341C18E5188900E2B1AC /* BANMLBScoreboard.m */,
 				989CB54818E3BF9A00E73810 /* BANScoreboardGame.h */,
 				989CB54918E3BF9A00E73810 /* BANScoreboardGame.m */,
 				989CB54B18E3C38600E73810 /* BANScoreboardInning.h */,
@@ -237,6 +242,7 @@
 				989CB54A18E3BF9A00E73810 /* BANScoreboardGame.m in Sources */,
 				989CB54618E3BD6700E73810 /* main.m in Sources */,
 				989CB54018E3BD6700E73810 /* BANAppDelegate.m in Sources */,
+				980E341D18E5188900E2B1AC /* BANMLBScoreboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
