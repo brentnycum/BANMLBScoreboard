@@ -9,8 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <AFNetworking.h>
 
+#import "BANScoreboardGame.h"
+#import "BANScoreboardInning.h"
+#import "BANScoreboardPlayer.h"
+
 @interface BANMLBScoreboard : AFHTTPRequestOperationManager
 
 + (instancetype)sharedClient;
+
+- (void)todaysGames:(void (^)(NSArray *games, NSError *error))block;
 
 @end
