@@ -15,11 +15,14 @@ PODS:
   - AFNetworking/Reachability (2.2.1)
   - AFNetworking/Security (2.2.1)
   - AFNetworking/Serialization (2.2.1)
+  - RaptureXML (1.0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2)
+  - RaptureXML (~> 1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
+  RaptureXML: ef017fda62eb95c60300108366d1f0cd0c28cbd4
 
 COCOAPODS: 0.29.0
