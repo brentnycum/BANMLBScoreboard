@@ -111,6 +111,10 @@ static NSString * const BANMLBScoreboardBaseURLString = @"http://gdx.mlb.com/com
 				player.firstName = [winningPitcher attribute:@"first"];
 				player.lastName = [winningPitcher attribute:@"last"];
 				player.rosterName = [winningPitcher attribute:@"name_display_roster"];
+				player.number = [NSNumber numberWithInteger:[winningPitcher attributeAsInt:@"number"]];
+				player.wins = [NSNumber numberWithInteger:[winningPitcher attributeAsInt:@"wins"]];
+				player.loses = [NSNumber numberWithInteger:[winningPitcher attributeAsInt:@"loses"]];
+				player.era = [NSNumber numberWithDouble:[winningPitcher attributeAsDouble:@"era"]];
 				
 				scoreboardGame.winningPitcher = player;
 				
@@ -124,6 +128,10 @@ static NSString * const BANMLBScoreboardBaseURLString = @"http://gdx.mlb.com/com
 				player.firstName = [losingPitcher attribute:@"first"];
 				player.lastName = [losingPitcher attribute:@"last"];
 				player.rosterName = [losingPitcher attribute:@"name_display_roster"];
+				player.number = [NSNumber numberWithInteger:[losingPitcher attributeAsInt:@"number"]];
+				player.wins = [NSNumber numberWithInteger:[losingPitcher attributeAsInt:@"wins"]];
+				player.loses = [NSNumber numberWithInteger:[losingPitcher attributeAsInt:@"loses"]];
+				player.era = [NSNumber numberWithDouble:[losingPitcher attributeAsDouble:@"era"]];
 				
 				scoreboardGame.losingPitcher = player;
 				
@@ -137,6 +145,10 @@ static NSString * const BANMLBScoreboardBaseURLString = @"http://gdx.mlb.com/com
 				player.firstName = [savePitcher attribute:@"first"];
 				player.lastName = [savePitcher attribute:@"last"];
 				player.rosterName = [savePitcher attribute:@"name_display_roster"];
+				player.number = [NSNumber numberWithInteger:[savePitcher attributeAsInt:@"number"]];
+				player.wins = [NSNumber numberWithInteger:[savePitcher attributeAsInt:@"wins"]];
+				player.loses = [NSNumber numberWithInteger:[savePitcher attributeAsInt:@"loses"]];
+				player.era = [NSNumber numberWithDouble:[savePitcher attributeAsDouble:@"era"]];
 				
 				scoreboardGame.savePitcher = player;
 				
