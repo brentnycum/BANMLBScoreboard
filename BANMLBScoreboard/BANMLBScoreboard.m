@@ -31,7 +31,7 @@ static NSString * const BANMLBScoreboardBaseURLString = @"http://gdx.mlb.com/com
 
 - (void)todaysGames:(void (^)(NSArray *games, NSError *error))block {
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-	[formatter setDateFormat:@"'year_'yyyy'/month_'MM'/day_'dd'/scoreboard_mac.xml"];
+	[formatter setDateFormat:@"'year_'yyyy'/month_'MM'/day_'dd'/scoreboard_mac.xml'"];
 	
 	NSDate *today = [NSDate date];
 	
