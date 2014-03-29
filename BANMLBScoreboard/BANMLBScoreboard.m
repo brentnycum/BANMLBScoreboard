@@ -155,6 +155,40 @@ static NSString * const BANMLBScoreboardBaseURLString = @"http://gdx.mlb.com/com
 				savePitcher = nil;
 			}
 			
+			RXMLElement *homeProbablePitcher = [game child:@"home_probable_pitcher"];
+			
+			if (homeProbablePitcher) {
+				BANScoreboardPlayer *player = [[BANScoreboardPlayer alloc] init];
+				player.firstName = [homeProbablePitcher attribute:@"first"];
+				player.lastName = [homeProbablePitcher attribute:@"last"];
+				player.rosterName = [homeProbablePitcher attribute:@"name_display_roster"];
+				player.number = [NSNumber numberWithInteger:[homeProbablePitcher attributeAsInt:@"number"]];
+				player.wins = [NSNumber numberWithInteger:[homeProbablePitcher attributeAsInt:@"wins"]];
+				player.loses = [NSNumber numberWithInteger:[homeProbablePitcher attributeAsInt:@"loses"]];
+				player.era = [NSNumber numberWithDouble:[homeProbablePitcher attributeAsDouble:@"era"]];
+				
+				scoreboardGame.homeProbablePitcher = player;
+				
+				homeProbablePitcher = nil;
+			}
+			
+			RXMLElement *awayProbablePitcher = [game child:@"away_probable_pitcher"];
+			
+			if (awayProbablePitcher) {
+				BANScoreboardPlayer *player = [[BANScoreboardPlayer alloc] init];
+				player.firstName = [awayProbablePitcher attribute:@"first"];
+				player.lastName = [awayProbablePitcher attribute:@"last"];
+				player.rosterName = [awayProbablePitcher attribute:@"name_display_roster"];
+				player.number = [NSNumber numberWithInteger:[awayProbablePitcher attributeAsInt:@"number"]];
+				player.wins = [NSNumber numberWithInteger:[awayProbablePitcher attributeAsInt:@"wins"]];
+				player.loses = [NSNumber numberWithInteger:[awayProbablePitcher attributeAsInt:@"loses"]];
+				player.era = [NSNumber numberWithDouble:[awayProbablePitcher attributeAsDouble:@"era"]];
+				
+				scoreboardGame.awayProbablePitcher = player;
+				
+				awayProbablePitcher = nil;
+			}
+			
 			[games addObject:scoreboardGame];
 		}];
 		
