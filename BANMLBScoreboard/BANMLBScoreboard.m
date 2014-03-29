@@ -10,7 +10,7 @@
 
 #import <RaptureXML/RXMLElement.h>
 
-static NSString * const BANMLBScoreboardBaseURLString = @"http://gdx.mlb.com/components/game/mlb/year_2014/";
+static NSString * const BANMLBScoreboardBaseURLString = @"http://gdx.mlb.com/components/game/mlb/";
 
 @implementation BANMLBScoreboard
 
@@ -30,7 +30,12 @@ static NSString * const BANMLBScoreboardBaseURLString = @"http://gdx.mlb.com/com
 #pragma mark - BANMLBScoreboard
 
 - (void)todaysGames:(void (^)(NSArray *games, NSError *error))block {
-	[self GET:@"" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	[formatter setDateFormat:@"'year_'yyyy'/month_'MM'/day_'dd'/scoreboard_mac.xml"];
+	
+	NSDate *today = [NSDate date];
+	
+	[self GET:[formatter stringFromDate:today] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
 		NSMutableArray *games = [NSMutableArray array];
 		
 		RXMLElement *xml = [RXMLElement elementFromXMLString:operation.responseString encoding:operation.responseStringEncoding];
