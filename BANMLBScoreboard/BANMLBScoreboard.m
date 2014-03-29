@@ -104,6 +104,45 @@ static NSString * const BANMLBScoreboardBaseURLString = @"http://gdx.mlb.com/com
 			scoreboardGame.homeTeamTV = [[game child:@"broadcast.home.tv"] text];
 			scoreboardGame.homeTeamRadio = [[game child:@"broadcast.home.radio"] text];
 			
+			RXMLElement *winningPitcher = [game child:@"winning_pitcher"];
+			
+			if (winningPitcher) {
+				BANScoreboardPlayer *player = [[BANScoreboardPlayer alloc] init];
+				player.firstName = [winningPitcher attribute:@"first"];
+				player.lastName = [winningPitcher attribute:@"last"];
+				player.rosterName = [winningPitcher attribute:@"name_display_roster"];
+				
+				scoreboardGame.winningPitcher = player;
+				
+				winningPitcher = nil;
+			}
+			
+			RXMLElement *losingPitcher = [game child:@"losing_pitcher"];
+			
+			if (losingPitcher) {
+				BANScoreboardPlayer *player = [[BANScoreboardPlayer alloc] init];
+				player.firstName = [losingPitcher attribute:@"first"];
+				player.lastName = [losingPitcher attribute:@"last"];
+				player.rosterName = [losingPitcher attribute:@"name_display_roster"];
+				
+				scoreboardGame.losingPitcher = player;
+				
+				losingPitcher = nil;
+			}
+			
+			RXMLElement *savePitcher = [game child:@"save_pitcher"];
+			
+			if (savePitcher) {
+				BANScoreboardPlayer *player = [[BANScoreboardPlayer alloc] init];
+				player.firstName = [savePitcher attribute:@"first"];
+				player.lastName = [savePitcher attribute:@"last"];
+				player.rosterName = [savePitcher attribute:@"name_display_roster"];
+				
+				scoreboardGame.savePitcher = player;
+				
+				savePitcher = nil;
+			}
+			
 			[games addObject:scoreboardGame];
 		}];
 		
